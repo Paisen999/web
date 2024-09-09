@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        p{
+            background-image: url('th.jfif');
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-image: url('D:/Act3/OIP.jfif');
+            min-height: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+       
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 28px;
+            color: #23d13d;
+            margin-bottom: 20px;
+        }
+        .login-container {
+            background-color: rgb(104, 103, 114);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(138, 114, 114, 0.2);
+            width: 350px;
+        }
+        .login-container h2 {
+            font-size: 24px;
+            color: #091b11;
+            margin-bottom: 15px;
+        }
+        .login-container input[type="text"], 
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #c2cedb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Welcome</div>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </div>
+            <br>
+                
+
+                <p style="color: azure;">Create an account? <a href="signup.html" class="signup">sign-up</a></p>
+            </form>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           background-image: url("D:/Act3/th.jfif");
+            display: flex;
+            min-height: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+        .login-container h2 {
+            font-size: 24px;
+            color: #444;
+            margin-bottom: 15px;
+        }
+        .login-container input[type="text"], 
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Welcome</div>
+        <div class="login-container">
+            <h2>Create Account</h2>
+            <form action="/login" method="post">
+                <div><input type="text" name="username" placeholder="FirstName" required><br></div>
+                <div><input type="text" name="username" placeholder="LastName" required><br></div>
+                <div><input type="password" name="password" placeholder="Password" required></div><br>
+                <input type="submit" value="Create">
+            </form>
+            <br>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    
+</body>
+</html>
